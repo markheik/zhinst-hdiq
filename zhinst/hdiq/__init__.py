@@ -1,3 +1,4 @@
 from .hdiq import Hdiq
 
-__version__ = "0.0.0"
+# Do not change. Poetry version placeholder
+__version__ = "v0.0.0"
