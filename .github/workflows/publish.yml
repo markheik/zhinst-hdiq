@@ -33,7 +33,8 @@ jobs:
         run: |
           python -m venv build_env --clear
           source build_env/bin/activate
-          bash build_tools/test_wheels.sh ${{ github.ref_name }}
+          python -m build_tools/test_wheels.py ${{ github.ref_name }}
+          bash build_tools/test_wheels.sh
 
       - name: Store artifacts
         uses: actions/upload-artifact@v2
